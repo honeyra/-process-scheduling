@@ -2,11 +2,8 @@
 int n;
 struct process
 {
-
 int p_no;
-
 int arrival_t, burst_t, ct, wait_t, taround_time, p;
-
 int flag;
  }p_list[100];
  void Sorting()
@@ -103,6 +100,6 @@ for(i=0;i<n;i++)
 {
 printf("P%d\t%d\t%d\t%d\t%d\n", p_list[i].p_no, p_list[i].arrival_t, p_list[i].ct, p_list[i].taround_time, p_list[i].wait_t);
  }
-printf("Average Turn around Time: %f\t\n\n",avg_taround_time);
-printf("Average  Waiting Time :\t %f\t\n",avg_w_t);
+printf("Average Turn around Time is: %f\t\n\n",avg_taround_time);
+printf("Average  Waiting Time is :\t %f\t\n",avg_w_t);
 }
